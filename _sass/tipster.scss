@@ -1,0 +1,39 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+ display: grid;
+ grid-template-columns: auto 1fr auto;
+ grid-template-rows: 20vh 80vh;
+ grid-gap: 0.5em;
+ padding: 0 1em;
+ grid-template-areas: "header header header"
+                       "sidebar tips ads";
+}
+
+.ads {
+ background-color: red;
+ grid-area: ads;
+}
+
+.header {
+ background-color: blue;
+ grid-area: header;
+}
+
+.tips {
+ background-color: brown;
+ grid-area: tips;
+}
+
+.sidebar {
+ background-color: green;
+ grid-area: sidebar;
+}
